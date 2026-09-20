@@ -1,4 +1,4 @@
-from wlDataProcessor import getcsvdata
+from wldataprocessor import getcsvdata
 
 urls: list = [
     "https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-haltepunkte.csv",  # stopPoints

@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class Line:
     lineID: int
     lineName: str
@@ -28,6 +27,7 @@ class Lines:
         for row in data:
             line = Line(row[list(row.keys())[0]])
             self.lines[line.lineID] = line
+        print("Lines loaded")
 
     def getByID(self, lineID: int) -> Line:
         return self.lines[lineID]
